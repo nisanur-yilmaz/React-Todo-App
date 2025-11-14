@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --pink-color: #C890A7;
+  --white-color: #fff;
+  --black-color:#212121;
+}
+
+body {
+  width: 100%;
+  min-height: 500px;
+  height: 100vh;
+  background: url("images/resim-1.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: var(--white-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: var(--black-color);
+  padding: 2rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 1.0714rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1.0714rem rgba(0, 0, 0, 0.1);
+  max-height: 30rem;
+  overflow-y: auto;
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+
+  outline: none;
+  background: none;
+  border: 1px solid var(--pink-color);
+  padding: 0.6rem 1rem;
+  margin-right: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 300px;
+  color: var(--white-color);
+}
+
+.todo-input::placeholder {
+  color: var(--pink-color);
+}
+
+.todo-btn {
+  height:41px;
+border-radius: 5px;
+  background: var(--pink-color);
+  color: var(--white-color);
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+.todo-btn:hover{
+  background: var(--black-color);
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--pink-color);
+  color: var(--white-color);
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.completed {
+  color: var(--black-color);
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
